@@ -1,7 +1,7 @@
 import 'package:brew_coffee/models/brew.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'package:brew_coffee/screens/home/brew_tile.dart';
 class BrewList extends StatefulWidget {
   @override
   _BrewListState createState() => _BrewListState();
