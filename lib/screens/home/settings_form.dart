@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:brew_coffee/shared/constant.dart';
 
-
 class SettingsForm extends StatefulWidget {
   @override
   _SettingsFormState createState() => _SettingsFormState();
@@ -47,8 +46,17 @@ class _SettingsFormState extends State<SettingsForm> {
             onChanged: (val) => setState(() => _currentSugars = val ),
           ),
           SizedBox(height: 10.0),
+          Slider(
+            value: (_currentStrength ?? 100).toDouble(),
+            activeColor: Colors.brown[_currentStrength ?? 100],
+            inactiveColor: Colors.brown[_currentStrength ?? 100],
+            min: 100.0,
+            max: 900.0,
+            divisions: 8,
+            onChanged: (val) => setState(() => _currentStrength = val.round()),
+          ),
           RaisedButton(
-              color: Colors.brown[400],
+              color: Colors.pink[400],
               child: Text(
                 'Update',
                 style: TextStyle(color: Colors.white),
