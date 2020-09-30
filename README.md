@@ -1,5 +1,5 @@
 # brew_coffe_app
-A Flutter application with full Firebase user authentication and database as Firestore.<br/>
+A Flutter application with full Firebase user authentication and Firestore as Database.<br/>
 <h2>Features:</h2>
 -User authentication(SignIn and Sign Up).<br/>
 -Anonymous signIn.<br/>
